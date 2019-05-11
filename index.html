@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mini GitHub API Client</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="body">
+    <header class="header">
+        <p>Mini GitHub API Client</p>
+    </header>
+    <main class="main">
+        <div class="container">
+
+            <form id="searchForm">
+                <fieldset class="searchBar">
+                    <legend class="legend">Search by GitHub username</legend>
+                    <input type="text" class="search-input" id="search-input" name="username"
+                        placeholder="Enter username" />
+                    <button class="button" type="submit">Submit</button>
+                </fieldset>
+            </form>
+
+            <div id="ownerContainer"></div>
+
+            <form id="filtersForm" class="hidden">
+                <fieldset id="filtersContainer">
+                    <legend class="legend">Filter results</legend>
+                    <div class="filterOptions">
+                        <div class="filterOption">
+                            <label for="repo-stars">Number of Stars</label>
+                            <input type="number" value="0" name="repo-stars" id="repo-stars" step="1" />
+                        </div>
+                        <div class="filterOption">
+                            <label for="repo-type">Repo Type</label>
+                            <select name="repo-type" id="repo-type">
+                                <option value="all">All Types</option>
+                                <option value="fork">Forks</option>
+                                <option value="source">Sources</option>
+                            </select>
+                        </div>
+                        <div class="filterOption">
+                            <input type="submit" value="Apply Filters" /></div>
+                    </div>
+                </fieldset>
+                <fieldset id="sortingContainer">
+                    <legend class="legend">Sort results</legend>
+                    <input type="button" id="sort-by-name" value="Sort by name" />
+                    <input type="button" id="sort-by-stars" value="Sort by stars" />
+                </fieldset>
+            </form>
+
+            <div id="cardsContainer"></div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>&#9749;</p>
+    </footer>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

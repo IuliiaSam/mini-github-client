@@ -1,0 +1,210 @@
+* {
+    list-style: none;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    justify-content: center;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    background: lightcyan;
+}
+
+.header {
+    width: 100%;
+    line-height: 3rem;
+    align-self: flex-start;
+    background: #4C4D4D;
+    color: #E9E9E9;
+}
+
+.header>p {
+    display: block;
+    width: 100%;
+    line-height: 4rem;
+}
+
+.main {
+    width: 980px;
+    background: #fff;
+}
+
+.container {
+    padding: 2rem;
+    min-width: 480px;
+}
+
+.legend {
+    width: 100%;
+    text-align: center;
+}
+
+.searchBar {
+    border: 10px solid gray;
+    border: none;
+}
+
+.search-input {
+    height: 2rem;
+    padding: 0.5rem;
+}
+
+.button {
+    min-width: 4rem;
+    height: 2rem;
+    padding: 0 1rem;
+    border: 0;
+    outline: 0;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: skyblue;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: rgb(91, 200, 243);
+}
+
+#ownerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.userpic {
+    height: 50px;
+    margin-right: 1rem;
+}
+
+#filtersForm {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 5px;
+    padding-top: 0.3rem;
+    font-size: 0.9rem;
+    border: 1px solid gray;
+
+}
+
+#filtersContainer {
+    display: flex;
+    border: 1px solid gray;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-radius: 5px;
+    border: none;
+    width: 70%;
+}
+
+.filterOptions {
+    width: 100%;
+}
+
+.filterOption {
+    display: inline-block;
+    margin: 0 0.2rem;
+    width: 30%;
+    text-align: center;
+}
+
+.filterOption>label {
+    font-size: 0.9rem;
+}
+
+#repo-stars {
+    width: 3rem;
+}
+
+#sortingContainer {
+    border: 1px solid gray;
+    border-radius: 5px;
+    border: none;
+    width: 35%;
+}
+
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.cardsList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.repo-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 17rem;
+    height: 10rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.repo-card:hover {
+    background: #ccc;
+}
+
+.card-top {
+    max-height: 6rem;
+    overflow: hidden;
+}
+
+.repo-name {
+    display: block;
+    text-decoration: none;
+    color: darkslategray;
+    font-weight: 700;
+    padding: 0.4rem;
+}
+
+.repo-description {
+    color: #4C4D4D;
+    font-size: 0.9rem;
+}
+
+.card-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 2.5rem;
+}
+
+.tag {
+    display: flex;
+    align-self: flex-start;
+    font-size: 0.7rem;
+    line-height: 0.7rem;
+    color: gray;
+    border: 1px solid gray;
+    border-radius: 3px;
+    padding: 1px 2px;
+    margin: 2px;
+}
+
+.footer {
+    align-self: flex-end;
+    width: 100%;
+    background: #4C4D4D;
+    color: #E9E9E9;
+}
+
+.footer>p {
+    display: block;
+    width: 100%;
+    line-height: 4rem;
+}
